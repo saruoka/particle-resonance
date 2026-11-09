@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Resonance">
+  <meta name="format-detection" content="telephone=no">
+  <title>Particle Resonance 001</title>
+  <link rel="icon" href="./icons/favicon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <canvas id="view" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div id="ui" class="ui">
+    <header>
+      <p class="mark">Particle Resonance 001</p>
+      <p class="sub">低音で広がり、中音で流れ、高音で光る</p>
+    </header>
+    <footer>
+      <div class="meters" aria-hidden="true">
+        <div class="meter">
+          <span>低</span>
+          <div class="track"><i id="bar-bass"></i></div>
+        </div>
+        <div class="meter">
+          <span>中</span>
+          <div class="track"><i id="bar-mid"></i></div>
+        </div>
+        <div class="meter">
+          <span>高</span>
+          <div class="track"><i id="bar-high"></i></div>
+        </div>
+      </div>
+      <p id="status">デモ</p>
+      <div class="controls">
+        <button type="button" id="pick">音楽を選択</button>
+        <button type="button" id="play" disabled>再生</button>
+        <button type="button" id="full" aria-pressed="false">全画面</button>
+      </div>
+    </footer>
+  </div>
+
+  <p id="toast" role="status" aria-live="polite"></p>
+  <div id="fatal" hidden></div>
+
+  <input id="file" class="file-input" type="file" accept="audio/*,.mp3,.m4a,.aac,.wav,.flac,.ogg,.aiff,.aif,.caf,.mp4,.webm">
+  <audio id="player" playsinline webkit-playsinline preload="auto"></audio>
+
+  <noscript>
+    <p class="noscript">JavaScript を有効にすると、パーティクルが表示されます。</p>
+  </noscript>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
