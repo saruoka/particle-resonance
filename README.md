@@ -1,10 +1,11 @@
-# Particle Resonance 001
+# Particle Resonance
 
 https://saruoka.github.io/particle-resonance/
 
-Three.js / WebGL の音楽反応パーティクル作品。低音で広がり、中音で流れ、高音で光る。曲がなくてもデモが動く。
+- [Particle Resonance 001](https://saruoka.github.io/particle-resonance/) — 音楽反応のパーティクル。Bass opens the cloud, mids steer the flow, highs spark the light.
+- [Fluid Resonance 002](https://saruoka.github.io/particle-resonance/fluid/) — 音楽反応の流体。Bass splashes the ink, mids stir the swirl, highs catch the glow.
 
-A music-reactive particle piece. Bass opens the cloud, mids steer the flow, and highs spark the light. With no song, a demo plays.
+曲がなくてもデモが動く。With no song, a demo plays. 音声は端末の外に出ない。Audio never leaves the device.
 
 ## iPhone での使い方 / On iPhone
 

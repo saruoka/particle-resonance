@@ -102,7 +102,8 @@ export function createAudio(player) {
       }
     }
     if (ctx.state === "suspended") {
-      ctx.resume();
+      const resumed = ctx.resume();
+      if (resumed && typeof resumed.catch === "function") resumed.catch(() => {});
     }
     return ctx;
   }
