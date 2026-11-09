@@ -1,0 +1,14 @@
+# Audio stays on the device. Never commit music files.
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.oga
+*.opus
+*.aiff
+*.aif
+*.caf
+*.wma
+*.alac
